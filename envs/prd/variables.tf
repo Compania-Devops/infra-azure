@@ -4,5 +4,5 @@ variable "environment" {
 }
 variable "region" {
   type    = string
-  default = "West Central US"
+  default = "East US"
 }
