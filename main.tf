@@ -3,7 +3,7 @@ data "azurerm_resource_group" "principal" {
 }
 resource "azurerm_resource_group" "main" {
   name     = "rg-cicd-terraform-app-${local.idapp}-${var.environment}"
-  location = "East US"
+  location = var.region
 }
 
 data "azurerm_container_registry" "acr" {
